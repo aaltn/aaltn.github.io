@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nerd's веб-студия</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+
+        <nav class="main-navigation">
+          <span class="main-logo">
+            <img src="img/main-logo.png" width="139" height="56" alt="Лого веб-студии">
+          </span>
+          <ul>
+            <li class="active"><span>Студия</span></li>
+            <li><a href="#clients">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li class="cart"><a href="cart.html">Корзина</a></li>
+          </ul>
+        </nav>
+
+        <section class="slider">
+
+          <input id="slide1-btn" type="radio" name="slide-btn" checked>
+          <input id="slide2-btn" type="radio" name="slide-btn">
+          <input id="slide3-btn" type="radio" name="slide-btn">
+
+          <div class="slide-paginator">
+            <label for="slide1-btn"></label>
+            <label for="slide2-btn"></label>
+            <label for="slide3-btn"></label>
+          </div>
+
+          <div class="slide-1 clearfix">
+            <div class="slide-content">
+              <b class="slide-header">Долго, дорого, <br>
+              скрупулёзно.</b>
+              <p>Математически выверенный дизайн <br>
+              для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-picture">
+              <img src="pict/devices.png" width="338" height="231" alt="устройства">
+            </div>
+          </div>
+
+          <div class="slide-2 clearfix">
+            <div class="slide-content">
+              <b class="slide-header">Любите ли вы математику, <br>
+              как любим ее мы?</b>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные
+              за&nbsp;креатив, чтобы дать им возможность все просчитать</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-picture">
+              <img src="pict/calculator.png" width="230" height="249" alt="устройства">
+            </div>
+          </div>
+
+          <div class="slide-3 clearfix">
+            <div class="slide-content">
+              <b class="slide-header">Только наркотики, <br>
+              только хардкор!</b>
+              <p>Все дизайнерские решения в нашей компании принимаются
+              только под воздействием качественных галюциногенов</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-picture">
+              <img src="pict/raynbow-bot.png" width="333" height="319" alt="устройства">
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="services clearfix">
+        <div class="services-item">
+          <img  class="services-img" src="pict/laptop.png" width="240" height="124" alt="laptop">
+          <h2 class="services-title">Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="btn web-btn" href="#">Заказать</a>
+        </div>
+        <div class="services-item">
+          <img  class="services-img" src="pict/phone.png" width="240" height="124" alt="phone">
+          <h2 class="services-title">Приложения</h2>
+          <p>Покорите топ-10 приложений в&nbsp;AppStrore и Google Play</p>
+          <a  class="btn application-btn" href="#">Заказать</a>
+        </div>
+        <div class="services-item">
+          <img  class="services-img" src="pict/presentation.png" width="240" height="124" alt="presentation">
+          <h2 class="services-title">Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn presentation-btn" href="#">Заказать</a>
+        </div>
+      </section>
+      <hr>
+      <section class="about">
+        <div class="about-item clearfix">
+          <div class="about-left">
+            <p><b class="about-title">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук как роботы.</p>
+          </div>
+          <div class="about-right center">
+            <img src="img/main-logo.png" width="187" height="75" alt="Лого веб-студии">
+            <div class="side-lined">
+              <h2>Since 2004</h2>
+            </div>
+          </div>
+        </div>
+        <div class="about-item clearfix">
+          <div class="about-left">
+            <h2>Выполняем заказы на разработку:</h2>
+            <ul class="uncompressed-list">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="about-right">
+            <h2>Как мы работаем:</h2>
+            <ul class="uncompressed-list">
+              <li>С самоотдачей 146%</li>
+              <li>Соблюдая сроки на 100%</li>
+              <li>По предоплате 50%</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="clients" id="clients">
+        <div class="clients-img">
+          <a href="http://glukhanko.ru/" target="_blank">
+            <img src="img/glukhanko.png" alt="glukhanko">
+          </a>
+        </div>
+        <div class="clients-img">
+          <a href="https://echo.htmlacademy.ru/" target="_blank">
+            <img src="img/html-academy.png" alt="HTML Academy">
+          </a>
+        </div>
+        <div class="clients-img">
+          <a href="https://aaltn.github.io" target="_blank">
+            <img src="img/barbershop.png" alt="barbershop">
+          </a>
+        </div>
+      </section>
+      <hr>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-contacts" id="contacts">
+        <h2>Nerds Design Studio</h2>
+        <p>191186, Санкт-Петербург,
+          ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a  class="btn feedback" href="feedback-form.html">Напишите нам</a>
+      </div>
+      <div class="footer-map" id="map"> </div>
+      <div class="container clearfix">
+        <div class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="footer-promo">
+          <b class="footer-promo-title">Давайте дружить, это выгодно!</b>
+          <p>
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- modal -->
+
+    <div class="modal-overley"></div>
+
+    <div class="modal-feedback-form">
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <label>
+          Ваше имя:
+          <br>
+          <input type="text" name="name" placeholder="Представтесь, пожалуйста" required>
+        </label>
+        <label>
+          Ваш e-mail:
+          <br>
+          <input type="text" name="e-mail" placeholder="Для отправки ответа" required>
+        </label>
+        <label>
+          Текст письма:
+          <br>
+          <textarea name="massage" rows="5" cols="50" placeholder="В свободной форме" required></textarea>
+        </label>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoxHaVYytmWo8Ct707lP4-A9HWyImneQc&callback=initMap" async defer></script>
+
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wraper">
+
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photo-video.html">Фото и видео</a></li>
+          <li class="index-logo">
+            <!-- на главной отключаем ссылку на саму себя -->
+            <a href="index.html" title="Главная">
+            <img src="img/index-logo2.png" width="138" height="70" alt="Sedona logo">
+            </a>
+          </li>
+          <li><a href="index.html#map-canvas">Карта штата</a></li>
+          <li class="active"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="filter">
+        <form class="hotel-filter" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <label  class="check-label disabled">
+              <input type="checkbox" name="pool" checked disabled>
+              <span class="check-indicator"></span>
+              Бассейн
+            </label>
+            <label  class="check-label">
+              <input type="checkbox" name="parking">
+              <span class="check-indicator"></span>
+              Парковка
+            </label>
+            <label  class="check-label">
+              <input type="checkbox" name="wi-fi">
+              <span class="check-indicator"></span>
+              Wi-Fi
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <label  class="check-label">
+              <input type="checkbox" name="hotel">
+              <span class="check-indicator"></span>
+              Гостиница
+            </label>
+            <label  class="check-label">
+              <input type="checkbox" name="motel" checked>
+              <span class="check-indicator"></span>
+              Мотель
+            </label>
+            <label  class="check-label">
+              <input type="checkbox" name="apartments" checked>
+              <span class="check-indicator"></span>
+              Апартаменты
+            </label>
+        </fieldset>
+
+        <fieldset class="price-block">
+          <legend>Стоимость в сутки (Р):</legend>
+          <!-- <div class="mim-price"></div>   -->
+          <!-- <div class="max-price"></div> -->
+          <div class="price-value">
+            <label for="min-price">от </label>
+            <input id="min-price" type="text" name="min-price" maxlength="5" value="0">
+            <label for="max-price">до </label>
+            <input id="max-price" type="text" name="max-price" maxlength="5" value="4000">
+          </div>
+          <div class="range-controls">
+            <div class="progress-bar">
+              <div class="left-controls"></div>
+              <div class="right-controls"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+          <button class="btn" type="submit">Показать</button>
+        </fieldset>
+
+        </form>
+      </div>
+
+      <section class="sort">
+        <h2 class="sort-title">Найдено: <span class="sort-result">3</span></h2>
+        <ul>
+          <li><span>Сортировка:</span></li>
+          <li class="curent"><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
+          <li class="curent"><a href="#" title="По убыванию"><span class="sort-btn descending">По убыванию</span></a></li>
+          <li><a href="#" title="По возрастанию"><span class="sort-btn ascending">По возрастанию</span></a></li>
+        </ul>
+      </section>
+
+      <section class="search-result">
+        <div class="hotel clearfix">
+          <div class="hotel-picture">
+            <img src="pict/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
+          </div>
+          <div class="hotel-description">
+            <h2 class="hotel-title">Amara Resort & Spa</h2>
+            <span class="hotel-type">Гостиница</span>
+            <span class="hotel-price">От 4000 Р.</span>
+            <a href="" class="btn highlight">Подробнее</a>
+            <a href="" class="btn">Забронировать</a>
+          </div>
+          <div class="hotel-rating">
+            <div class="hotel-star star-5"></div>
+            <div class="rating-title">Рейтинг: <span class="rating-value">8,5</span></div>
+          </div>
+        </div>
+        <div class="hotel clearfix">
+          <div class="hotel-picture">
+            <img src="pict/desert-quail.jpg" width="135" height="90" alt="Desert Quail Inn">
+          </div>
+          <div class="hotel-description">
+            <h2 class="hotel-title">Desert Quail Inn</h2>
+            <span class="hotel-type">Мотель</span>
+            <span class="hotel-price">От 3500 Р.</span>
+            <a href="" class="btn highlight">Подробнее</a>
+            <a href="" class="btn">Забронировать</a>
+          </div>
+          <div class="hotel-rating">
+            <div class="hotel-star star-2"></div>
+            <div class="rating-title">Рейтинг: <span class="rating-value">8,9</span></div>
+          </div>
+        </div>
+        <div class="hotel clearfix">
+          <div class="hotel-picture">
+            <img src="pict/villas-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+          </div>
+          <div class="hotel-description">
+            <h2 class="hotel-title">Villas at Poco Diablo</h2>
+            <span class="hotel-type">Апартаменты</span>
+            <span class="hotel-price">От 2000 Р.</span>
+            <a href="" class="btn highlight">Подробнее</a>
+            <a href="" class="btn">Забронировать</a>
+          </div>
+          <div class="hotel-rating">
+            <div class="hotel-star star-3"></div>
+            <div class="rating-title">Рейтинг: <span class="rating-value">9,2</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-heshtag">
+        <a href="#">#VisitSedona</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-btn social-btn-twiter">Твитер</a>
+        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+        <a href="#" class="social-btn social-btn-youtube">Ютуб</a>
+      </div>
+      <div class="footer-banner">
+        <span>Website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <!-- <img src="img\html-academy.png" width="113" height="39" alt="HTML Academy"> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="120" height="44" viewBox="0 0 498 188">
+            <g id="htmlacademy-ico" fill="#000000">
+            <path transform="translate(0.000000,188.000000) scale(0.050000,-0.050000)" d="M720 3490 c-324 -37 -592 -67 -595 -68 -3 -1 -5 -528 -5 -1172 l0 -1169 639 -381 640 -382 640 382 641 382 0 1169 0 1168 -45 10 c-71 15 -1220 131 -1275 129 -27 -1 -315 -32 -640 -68z m1555 -191 l225 -24 0 -436 0 -437 -385 227 c-212 125 -461 272 -554 326 l-168 100 -162 -95 c-88 -53 -336 -201 -551 -329 l-390 -234 -5 425 c-3 234 1 432 10 440 8 8 258 41 555 72 l540 57 330 -34 c182 -19 431 -45 555 -58z m-347 -682 c287 -167 533 -313 546 -325 18 -16 -31 -54 -195 -148 l-219 -127 -318 192 c-361 217 -342 209 -342 136 1 -49 25 -69 205 -174 113 -65 240 -141 283 -167 l79 -49 -49 -26 c-53 -29 -27 -40 -363 159 l-155 91 0 -58 c0 -53 19 -70 182 -168 177 -106 180 -109 137 -139 -41 -29 -50 -28 -117 14 -39 25 -101 61 -137 80 l-65 33 0 -57 c0 -45 16 -66 80 -102 100 -56 100 -62 -7 -120 l-86 -47 -545 324 c-300 178 -542 327 -539 331 24 22 1071 649 1085 650 10 0 253 -136 540 -303z m572 -962 l-1 -485 -550 -327 -550 -327 -554 330 -555 329 -5 474 c-5 384 -1 473 21 468 136 -34 1094 -648 1094 -701 l0 -59 -65 39 c-169 104 -680 404 -687 404 -4 0 -8 -25 -8 -55 0 -51 33 -75 380 -283 354 -212 380 -231 380 -285 0 -69 22 -78 -307 121 -123 74 -275 164 -338 200 l-115 65 0 -57 c0 -48 576 -438 744 -503 10 -4 188 95 396 219 l379 227 5 249 6 250 160 96 c88 53 162 96 165 96 3 0 5 -218 5 -485z"/>
+            <text x="160" y="72"  font-family="Arial " font-size="72" font-weight="600" letter-spacing="4">html</text>
+            <text x="160" y="132"  font-family="Arial" font-size="72"  font-weight="600" letter-spacing="0.1">academy</text>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- <script src="js/script.js"></script> -->
+
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoxHaVYytmWo8Ct707lP4-A9HWyImneQc&callback=initMap" async defer></script> -->
+
+</body>
+</html>

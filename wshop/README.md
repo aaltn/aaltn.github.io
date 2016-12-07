@@ -1,0 +1,1 @@
+# Nerds - личный проект, в рамках курса "HTML~Academy Базовый HTML и CSS"
