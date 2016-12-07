@@ -46,9 +46,11 @@ body {
 
 .main-header__tag {
   display: block;
+  padding-right: 28px;
 
   font-size: 14px;
   line-height: 26px;
+  text-align: right;
 }
 
 .main-navigation {
