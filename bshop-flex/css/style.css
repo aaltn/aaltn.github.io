@@ -410,13 +410,13 @@ template {
   font-weight: normal;
   font-family: "PT Sans Narrow";
   font-style: normal;
-  src: url("../fonts/PTSansNarrow.woff2") format("woff2"), url("../fonts/PTSansNarrow.woff") format("woff");
+  src: url("../fonts/ptsansnarrow.woff2") format("woff2"), url("../fonts/ptsansnarrow.woff") format("woff");
 }
 @font-face {
   font-weight: 700;
   font-family: "PT Sans Narrow";
   font-style: normal;
-  src: url("../fonts/PTSansNarrowbold.woff2") format("woff2"), url("../fonts/PTSansNarrowbold.woff") format("woff");
+  src: url("../fonts/ptsansnarrowbold.woff2") format("woff2"), url("../fonts/ptsansnarrowbold.woff") format("woff");
 }
 body {
   font-size: 18px;
@@ -1438,6 +1438,7 @@ table {
     min-height: 160px;
   }
   .reviews__item {
+    width: 100%;
     margin: 0;
     padding: 30px 0;
     padding-left: 140px;
