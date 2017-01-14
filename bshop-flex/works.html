@@ -42,55 +42,77 @@
 	<main class="page-main">
 
 		<section class="portfolio">
-      <header class="portfolio__header">
-        <h2 class="portfolio__title  visually-hidden">Наши работы</h2>
-        <b class="portfolio__slogan">Наши работы</b>
-        <a class="btn portfolio__btn-home" href="index.html">На главную</a>
-      </header>
-      <article class="portfolio__item  portfolio__item--work-of-month">
-        <img class="portfolio__foto" src="img/photo-1-mobile.jpg" width="280" height="480" alt="Лжепётр Мчиславский">
-        <div class="portfolio__month-tag">Работа месяца</div>
-        <div class="portfolio__desc">
-          <b class="portfolio__item_name">Лжепётр Мчиславский</b>
-          <p class="portfolio__feedback">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
-          <ul class="portfolio__service-list">
-            <li class="portfolio__service-item  portfolio__service-item--cut">Стрижка</li>
-            <li class="portfolio__service-item  portfolio__service-item--shave">Бритье</li>
-            <li class="portfolio__service-item  portfolio__service-item--mustache">Усы</li>
-          </ul>
-        </div>
-      </article>
-      <article class="portfolio__item">
-        <img class="portfolio__foto" src="img/photo-2-mobile.jpg" width="280" height="176" alt="Саша Мальцев">
-        <div class="portfolio__desc">
-          <b class="portfolio__item_name">Саша Мальцев</b>
-          <p class="portfolio__feedback">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
-          <ul class="portfolio__service-list">
-            <li class="portfolio__service-item  portfolio__service-item--cut">Стрижка</li>
-          </ul>
-        </div>
-      </article>
-      <article class="portfolio__item">
-        <img class="portfolio__foto" src="img/photo-3-mobile.jpg" width="280" height="176" alt="Владимир Иваныч">
-        <div class="portfolio__desc">
-          <b class="portfolio__item_name">Владимир Иваныч</b>
-          <p class="portfolio__feedback">К зимнему сезону — готов!</p>
-          <ul class="portfolio__service-list">
-            <li class="portfolio__service-item  portfolio__service-item--beard">Борода</li>
-            <li class="portfolio__service-item  portfolio__service-item--mustache">Усы</li>
-          </ul>
-        </div>
-      </article>
-      <article class="portfolio__item">
-        <img class="portfolio__foto" src="img/photo-4-mobile.jpg" width="280" height="176" alt="Винстон Синий">
-        <div class="portfolio__desc">
-          <b class="portfolio__item_name">Винстон Синий</b>
-          <p class="portfolio__feedback">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
-          <ul class="portfolio__service-list">
-            <li class="portfolio__service-item  portfolio__service-item--cut">Стрижка</li>
-          </ul>
-        </div>
-      </article>
+      <div class="portfolio__wrapper">
+        <header class="portfolio__header">
+          <h2 class="portfolio__title  visually-hidden">Наши работы</h2>
+          <b class="portfolio__slogan">Наши работы</b>
+          <a class="btn portfolio__btn-home" href="index.html">На главную</a>
+        </header>
+        <article class="portfolio__item  portfolio__item--work-of-month">
+          <!-- <img class="portfolio__foto" src="img/photo-1-mobile.jpg" width="280" height="480" alt="Фото Саша Мальцев"> -->
+          <!-- <div class="portfolio__month-tag">Работа месяца</div> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x">
+            <img class="portfolio__foto" src="img/photo-1-mobile.jpg" width="280" height="176" alt="Фото Саша Мальцев"> 
+          </picture>
+          <div class="portfolio__desc">
+            <b class="portfolio__item_name">Саша Мальцев</b>
+            <p class="portfolio__feedback">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+            <ul class="portfolio__service-list">
+              <li class="portfolio__service-item  portfolio__service-item--cut">Стрижка</li>
+              <li class="portfolio__service-item  portfolio__service-item--shave">Бритье</li>
+              <li class="portfolio__service-item  portfolio__service-item--mustache">Усы</li>
+            </ul>
+          </div>
+        </article>
+        <article class="portfolio__item">
+          <!-- <img class="portfolio__foto" src="img/photo-2-mobile.jpg" width="280" height="176" alt="Лжепётр Мчиславский"> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x">
+            <img class="portfolio__foto" src="img/photo-2-mobile.jpg" width="280" height="176" alt="Фото Лжепётр Мчиславский"> 
+          </picture>
+          <div class="portfolio__desc">
+            <b class="portfolio__item_name">Лжепётр Мчиславский</b>
+            <p class="portfolio__feedback">Попросил омолодить и омолодили! Кто теперь скажет, что мне 65?</p>
+            <ul class="portfolio__service-list">
+              <li class="portfolio__service-item  portfolio__service-item--cut">Стрижка</li>
+            </ul>
+          </div>
+        </article>
+        <article class="portfolio__item">
+          <!-- <img class="portfolio__foto" src="img/photo-3-mobile.jpg" width="280" height="176" alt="Владимир Иваныч"> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x">
+            <img class="portfolio__foto" src="img/photo-3-mobile.jpg" width="280" height="176" alt="Фото Владимира Иваныча">
+          </picture>
+          <div class="portfolio__desc">
+            <b class="portfolio__item_name">Владимир Иваныч</b>
+            <p class="portfolio__feedback">К зимнему сезону — готов!</p>
+            <ul class="portfolio__service-list">
+              <li class="portfolio__service-item  portfolio__service-item--beard">Борода</li>
+              <li class="portfolio__service-item  portfolio__service-item--mustache">Усы</li>
+            </ul>
+          </div>
+        </article>
+        <article class="portfolio__item">
+          <!-- <img class="portfolio__foto" src="img/photo-4-mobile.jpg" width="280" height="176" alt="Винстон Синий"> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x">
+            <img class="portfolio__foto" src="img/photo-4-mobile.jpg" width="281" height="176" alt="Фото Винстон Синий">
+          </picture>
+          <div class="portfolio__desc">
+            <b class="portfolio__item_name">Винстон Синий</b>
+            <p class="portfolio__feedback">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+            <ul class="portfolio__service-list">
+              <li class="portfolio__service-item  portfolio__service-item--cut">Стрижка</li>
+            </ul>
+          </div>
+        </article>        
+      </div>
     </section>
 
     <section class="price">
@@ -130,38 +152,38 @@
             </tr>
           </table>
           <div class="price__discount">
-            <p class="price__discount-desc">C 10:00 до 14:00 скидка 20%</p>
+            <p class="price__discount-desc">C 10:00 до 14:00 скидка&nbsp;20%</p>
           </div>
         </div>
       </div>
     </section>
 
-	</main>	
+  </main>	
 
-	<footer class="page-footer">
-		<div class="page-footer__wraper">
-			<p class="page-footer__contacts">
-				<b>Барбершоп Бородинский</b><br>
-				г. Санкт-Петербург, ул. Большая &shy;Конюшенная 19/8 <br>
-				<a href="tel:+78125556666"><span class="page-footer__hidden">Тел.</span> +7 (812) 555-66-66</a>
-			</p>
-			<p class="page-footer__social">
-				<b class="social__title">Давайте дружить!</b>
-				<span class="social-links">
-					<a class="social-link  social-link--vk" href="https://vk.com"
-					title="Мы в Вконтакте">Мы в Вконтакте</a>
-					<a class="social-link  social-link--fb" href="https://www.facebook.com" title="Мы в Фейсбуке">Мы в Фейсбуке</a>
-					<a class="social-link  social-link--inst" href="https://www.instagram.com" title="Мы в Инстаграмме">Мы в Инстаграмме</a>
-				</span>				
-			</p>
-			<p class="page-footer__copyright">
-				Сверстано: <br>
-				<a class="page-footer__copyright-link  btn" href="https://github.com/aaltn" >HTML&CSS coder</a>
-			</p>
-		</div>
-	</footer>
+  <footer class="page-footer">
+    <div class="page-footer__wraper">
+     <p class="page-footer__contacts">
+      <b>Барбершоп Бородинский</b><br>
+      г. Санкт-Петербург, ул. Большая &shy;Конюшенная 19/8 <br>
+      <a href="tel:+78125556666"><span class="page-footer__hidden">Тел.</span> +7 (812) 555-66-66</a>
+    </p>
+    <p class="page-footer__social">
+      <b class="social__title">Давайте дружить!</b>
+      <span class="social-links">
+       <a class="social-link  social-link--vk" href="https://vk.com"
+       title="Мы в Вконтакте">Мы в Вконтакте</a>
+       <a class="social-link  social-link--fb" href="https://www.facebook.com" title="Мы в Фейсбуке">Мы в Фейсбуке</a>
+       <a class="social-link  social-link--inst" href="https://www.instagram.com" title="Мы в Инстаграмме">Мы в Инстаграмме</a>
+     </span>				
+   </p>
+   <p class="page-footer__copyright">
+    Сверстано: <br>
+    <a class="page-footer__copyright-link  btn" href="https://github.com/aaltn" >HTML&CSS coder</a>
+  </p>
+</div>
+</footer>
 
-	<script src="js/script.js"></script>  
+<script src="js/script.js"></script>  
 
 </body>
 </html>
