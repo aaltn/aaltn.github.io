@@ -2,24 +2,33 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Adaptive Barbershop - Оставить отзыв</title>
+	<title>Adaptive Barbershop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
 	<header class="page-header">
 		<h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1>
 		<div class="page-header__logo">
-			<img src="img/logo.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+			<picture>
+				<source media="(min-width: 1200px)"
+				srcset="img/logotype-desktop.svg">
+				<source media="(min-width: 768px)"
+				srcset="img/logotype-tablet.svg">
+				<img src="img/logotype-mobile.svg" width="370" height="153" alt="Барбершоп «Бородинский»">
+			</picture>			
 		</div>
 		<nav class="main-nav  main-nav--closed  main-nav--nojs">
 			<button class="main-nav__toggle" type="button">Открыть меню</button>
 			<div class="main-nav__wrapper">
 				<ul class="main-nav__items">
-					<li class="main-nav__item  main-nav__item--active"><a href="index.html">Главная</a></li>
+					<li class="main-nav__item"><a>Главная</a></li>
 					<li class="main-nav__item"><a href="works.html">Наши работы</a></li>
 					<li class="main-nav__item"><a href="appointment.html">Записаться</a></li>
-					<li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
-					<li class="main-nav__item"><a href="https://github.com/aaltn">HTML&CSS coder</a></li>
+					<li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+					<li class="main-nav__item"><a href="https://github.com/aaltn"><i>HTML&CSS coder</i></a></li>
 				</ul>
 				<ul class="main-nav__user-items">
 					<li class="main-nav__user-item">
@@ -29,7 +38,10 @@
 			</div>
 		</nav>
 	</header>
+
+	<main class="page-main">
 	
+	<!-- на случай если не сработал java-script и не открылся попап с формой отзыва -->
 	<div class="reviews-form">
 		<form action="https://echo.htmlacademy.ru" method="post">
 			<label for="">Ваше имя
@@ -42,6 +54,33 @@
 			<button  class="reviews-form__btn bt" type="submit">Отправить</button>
 		</form>
 	</div>
+
+	</main>	
+
+	<footer class="page-footer">
+		<div class="page-footer__wraper">
+			<p class="page-footer__contacts" id="contacts">
+				<b>Барбершоп Бородинский</b><br>
+				г. Санкт-Петербург, ул. Большая &shy;Конюшенная 19/8 <br>
+				<a href="tel:+78125556666"><span class="page-footer__hidden">Тел.</span> +7 (812) 555-66-66</a>
+			</p>
+			<p class="page-footer__social">
+				<b class="social__title">Давайте дружить!</b>
+				<span class="social-links">
+					<a class="social-link  social-link--vk" href="https://vk.com"
+					title="Мы в Вконтакте">Мы в Вконтакте</a>
+					<a class="social-link  social-link--fb" href="https://www.facebook.com" title="Мы в Фейсбуке">Мы в Фейсбуке</a>
+					<a class="social-link  social-link--inst" href="https://www.instagram.com" title="Мы в Инстаграмме">Мы в Инстаграмме</a>
+				</span>				
+			</p>
+			<p class="page-footer__copyright">
+				Сверстано: <br>
+				<a class="page-footer__copyright-link  btn" href="https://github.com/aaltn" >HTML&CSS coder</a>
+			</p>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>  
 
 </body>
 </html>
