@@ -407,7 +407,7 @@ template {
   font-weight: normal;
   font-family: "PT Sans Narrow";
   font-style: normal;
-  src: url("../fonts/PTSansNarrow.woff2") format("woff2"), url("../fonts/PTSansNarrow.woff") format("woff");
+  src: url("../fonts/ptsansnarrow.woff2") format("woff2"), url("../fonts/ptsansnarrow.woff") format("woff");
 }
 @font-face {
   font-weight: 700;
@@ -1260,7 +1260,9 @@ table {
     left: 0;
     right: 0;
     height: 45px;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 45' preserveAspectRatio='none'><polygon points='0,0 600,0 300,45' style='fill:#292929;stroke:none;' /></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 45' preserveAspectRatio='none'><polygon points='0,0 600,0 300,45' style='fill:rgb(41,41,41);stroke:none;' /></svg>");
+    background-repeat: no-repeat;
+    background-size: 100% 45px;
   }
   .news__wraper {
     padding: 0;
@@ -1404,8 +1406,7 @@ table {
     height: 45px;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 45' preserveAspectRatio='none'><polygon points='0,0 600,0 300,45' style='fill:rgb(248,245,242);stroke:none;' /></svg>");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-size: 100% 45px;
   }
   .page-footer__contacts {
     padding: 0;
@@ -1592,6 +1593,7 @@ table {
   }
   .news::after {
     height: 65px;
+    background-size: 100% 65px;
   }
   .news__title {
     margin-left: 70px;
@@ -1635,6 +1637,7 @@ table {
   }
   .page-footer::after {
     height: 65px;
+    background-size: 100% 65px;
   }
   .page-footer__wraper {
     padding-top: 55px;
@@ -1794,7 +1797,8 @@ table {
     left: 0;
     right: 0;
     height: 35px;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 45' preserveAspectRatio='none'><polygon points='0,0 600,0 300,45' style='fill:#f8f5f2;stroke:none;' /></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 45' preserveAspectRatio='none'><polygon points='0,0 600,0 300,45' style='fill:rgb(248,245,242);stroke:none;' /></svg>");
+    background-size: 100% 35px;
   }
   .page-footer__hidden {
     position: absolute;
