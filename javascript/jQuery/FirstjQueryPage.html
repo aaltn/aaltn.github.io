@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>First jQuery-Enabled Page</title>
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- insert the script to reference jQuery here -->
+	<script src="js/jquery-3.1.1.js"></script>
+
+	<!-- insert the script to display the Hello World message here -->
+	<script>
+    	// Inserting content using jQuery
+    	$("document").ready(function(){
+    		$("#content").append("<p>Inserting content using jQuery.</p>");
+    	})
+
+    	// Inserting content the old way using the DOM 
+    	window.addEventListener("DOMContentLoaded", function(evt) {
+    		var elem = document.getElementById("content");
+    		var para = document.createElement("p");
+    		var text = document.createTextNode("Inserting content the old way using the DOM.");
+    		para.appendChild(text);
+    		elem.appendChild(para);
+    	});
+    </script>
+  </head>
+
+  <body>
+  	<h1>First jQuery Page</h1>
+  	<div id="content">
+  		<!-- we start with an empty document -->
+  	</div>
+  </body>
+
+  </html>

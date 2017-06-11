@@ -42,13 +42,14 @@
 	<main class="page-main">
 
 		<section class="order">
-		<div class="order__wrapper">
+			<div class="order__wrapper">
 				<header class="order__header">
 					<h2 class="order__title  visually-hidden">Форма записи на стрижку</h2>
 					<b class="order__slogan">Запись на стрижку</b>
 					<a class="btn btn--to-main" href="index.html">На главную</a>
 				</header>
-				<form class="order-form">
+				
+				<form class="order-form" action="https://echo.htmlacademy.ru" method="post">
 					<div class="order-form__contacts">
 						<div class="order-form__name">
 							<input class="order-form__field  order-form__field--name" type="text" name="surname" placeholder="Фамилия" required>
@@ -56,73 +57,109 @@
 							<input class="order-form__field  order-form__field--name" type="text" name="patronymic" placeholder="Отчество">
 						</div>
 						<div class="order-form__communications">
-							<input class="order-form__field  order-form__field--communications" type="tel" name="surname" placeholder="Контактный телефон" required>
-							<input class="order-form__field  order-form__field--communications" type="email" name="name" placeholder="Контактный e-mail" required>
+							<input class="order-form__field  order-form__field--communications" type="tel" name="tel" placeholder="Контактный телефон" required>
+							<input class="order-form__field  order-form__field--communications" type="email" name="email" placeholder="Контактный e-mail" required>
 						</div>
 						<div class="order-form__information">
 							<textarea class="order-form-field  order-form__field--information" name="info-for-master" placeholder="Доп. информация для мастера"></textarea>
 						</div>
 					</div>
-					<div class="order-form__beard-model">
-						<b class="order-form__title">Выберите модель бороды:</b>
+					
+					<fieldset class="order-form__beard-model">
+						<legend class="order-form__title"> Выберите модель бороды: </legend>						
 						<ul class="order-form__list  order-form__list--model">
 							<li>
-								<input class="order-form__field  order-form__field--model" type="radio" name="model" id="admiral">
-								<label class="order-form__label  order-form__label--model" for="admiral">адмирал</label>
-								<img src="img/beard-1.svg" width="52" height="49" alt="Стиль «Адмирал»">
+								<label class="order-form__label  order-form__label--model">
+									<input class="order-form__field  order-form__field--model" type="radio" name="model" value="admiral">
+									<span class="order-form__check-indicator"></span>
+									Адмирал
+									<img src="img/beard-1.svg" width="52" height="49" alt="Стиль «Адмирал»">
+								</label>
 							</li>
 							<li>
-								<input class="order-form__field  order-form__field--model" type="radio" name="model" id="lumberjack">
-								<label class="order-form__label  order-form__label--model" for="lumberjack">лесоруб</label>
-								<img src="img/beard-2.svg" width="58" height="68" alt="Стиль «Лесоруб»">
+								<label class="order-form__label  order-form__label--model">
+									<input class="order-form__field  order-form__field--model" type="radio" name="model" value="lumberjack">
+									<span class="order-form__check-indicator"></span>
+									Лесоруб
+									<img src="img/beard-2.svg" width="58" height="68" alt="Стиль «Лесоруб»">
+								</label>
 							</li>
 							<li>
-								<input class="order-form__field  order-form__field--model" type="radio" name="model" id="polar-explorer">
-								<label class="order-form__label  order-form__label--model" for="polar-explorer">полярник</label>
-								<img src="img/beard-3.svg" width="63" height="78" alt="Стиль «Полярник»">
+								<label class="order-form__label  order-form__label--model">
+									<input class="order-form__field  order-form__field--model" type="radio" name="model" value="polar-explorer">
+									<span class="order-form__check-indicator"></span>
+									Полярник
+									<img src="img/beard-3.svg" width="63" height="78" alt="Стиль «Полярник»">
+								</label>
 							</li>
 							<li>
-								<input class="order-form__field  order-form__field--model" type="radio" name="model" id="lord">
-								<label class="order-form__label  order-form__label--model" for="lord">боярин</label>
-								<img src="img/beard-4.svg" width="57" height="97" alt="Стиль «Боярин»">
+								<label class="order-form__label  order-form__label--model" for="lord">
+									<input class="order-form__field  order-form__field--model" type="radio" name="model" id="lord" value="lord">
+									<span class="order-form__check-indicator"></span>
+									Боярин
+									<img src="img/beard-4.svg" width="57" height="97" alt="Стиль «Боярин»">
+								</label>
 							</li>
 							<li>
-								<input class="order-form__field  order-form__field--model" type="radio" name="model" id="wiseman">
-								<label class="order-form__label  order-form__label--model" for="wiseman">мудрец</label>
-								<img src="img/beard-5.svg" width="45" height="104" alt="Стиль «Мудрец»">
+								<label class="order-form__label  order-form__label--model">
+									<input class="order-form__field  order-form__field--model" type="radio" name="model" value="wiseman">
+									<span class="order-form__check-indicator"></span>
+									Мудрец
+									<img src="img/beard-5.svg" width="45" height="104" alt="Стиль «Мудрец»">
+								</label>
 							</li>
 						</ul>
-					</div>
-					<div class="order-form__additional-service">
-						<b class="order-form__title">Дополнительные услуги:</b>
+					</fieldset>
+					
+					<fieldset class="order-form__additional-service">
+						<legend class="order-form__title">Дополнительные услуги:</legend>						
 						<ul class="order-form__list  order-form__list--additional">
 							<li>
-								<input class="order-form__field  order-form__field--additional" type="checkbox" name="additional" id="color-beard">
-								<label class="order-form__label  order-form__label--additional" for="color-beard">Подкрасить бороду</label>
+								<label class="order-form__label  order-form__label--additional">
+									<input class="order-form__field  order-form__field--additional" type="checkbox" name="color-beard">
+									<span class="order-form__check-indicator"></span>
+									Подкрасить бороду
+								</label>
 							</li>
 							<li>
-								<input class="order-form__field  order-form__field--additional" type="checkbox" name="additional" id="twirl-mustache">
-								<label class="order-form__label  order-form__label--additional" for="twirl-mustache">Накрутить усы</label>
+								<label class="order-form__label  order-form__label--additional">
+									<input class="order-form__field  order-form__field--additional" type="checkbox" name="twirl-mustache">
+									<span class="order-form__check-indicator"></span>
+									Накрутить усы
+								</label>
 							</li>
 							<li>
-								<input class="order-form__field  order-form__field--additional" type="checkbox" name="additional" id="comb-beard">
-								<label class="order-form__label  order-form__label--additional" for="comb-beard">Расчесать бороду</label>
+								<label class="order-form__label  order-form__label--additional">
+									<input class="order-form__field  order-form__field--additional" type="checkbox" name="comb-beard">
+									<span class="order-form__check-indicator"></span>								
+									Расчесать бороду
+								</label>
 							</li>
 							<li>
-								<input class="order-form__field  order-form__field--additional" type="checkbox" name="additional" id="align-temple">
-								<label class="order-form__label  order-form__label--additional" for="align-temple">Подровнять виски</label>
+								<label class="order-form__label  order-form__label--additional">
+									<input class="order-form__field  order-form__field--additional" type="checkbox" name="align-temple" id="align-temple">
+									<span class="order-form__check-indicator"></span>
+									Подровнять виски
+								</label>
 							</li>
 							<li>
-								<input class="order-form__field  order-form__field--additional" type="checkbox" name="additional" id="remove-graying">
-								<label class="order-form__label  order-form__label--additional" for="remove-graying">Убрать седину</label>
+								<label class="order-form__label  order-form__label--additional">
+									<input class="order-form__field  order-form__field--additional" type="checkbox" name="remove-graying">
+									<span class="order-form__check-indicator"></span>
+									Убрать седину
+								</label>
 							</li>
 							<li>
-								<input class="order-form__field  order-form__field--additional" type="checkbox" name="additional" id="polish-bald-spot">
-								<label class="order-form__label  order-form__label--additional" for="polish-bald-spot">Отполировать лысину</label>
+								<label class="order-form__label  order-form__label--additional">
+									<input class="order-form__field  order-form__field--additional" type="checkbox" name="polish-bald-spot">
+									<span class="order-form__check-indicator"></span>
+									Отполировать лысину
+								</label>
 							</li>
 						</ul>
-					</div>
-					<button class="btn order-form__btn" type="submit">Отправить заявку</button>
+					</fieldset>
+					
+					<button class="btn order-form__btn" type="submit">Отправить заявку</button>					
 				</form>
 			</div>
 		</section>		
@@ -151,6 +188,29 @@
 			</p>
 		</div>
 	</footer>
+
+	<!-- popups     popup--show -->
+	<div class="popup">
+		<div class="popup__content  popup__success">
+			<h2 class="popup__header">Это успех!</h2>
+			<p>
+				Ваша заявка отправленна.<br>
+				Ожидайте, мы свяжемся с вами как только будет минутка.
+			</p>       
+			<button class="btn  btn--braun" type="button">Закрыть окно</button>
+		</div>
+	</div>
+
+	<div class="popup  popup--show">
+		<div class="popup__content  popup__error">
+			<h2 class="popup__header">Неудача</h2>
+			<p>
+				Что-то пошло не так.<br>
+				Проверьте выделенные красным поля формы.
+			</p>       
+			<button class="btn  btn--braun" type="button">ОК</button>
+		</div>
+	</div>
 
 	<script src="js/script.js"></script>  
 

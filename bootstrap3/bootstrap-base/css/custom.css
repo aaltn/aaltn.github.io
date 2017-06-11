@@ -1,0 +1,93 @@
+/*-----------custom.css---------*/
+body { 
+	padding-top: 70px; 
+}
+
+footer {
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	text-align: center;
+}
+
+.glyphicon {
+	color: #3F2B22;	
+}
+
+.active .glyphicon,
+.navbar .glyphicon {
+	color: #cdae51;
+}
+
+.pull-right.img-responsive {
+	margin: 0 0 1em 1em;
+}
+
+.btn-info {
+	background-color: #cdae51;
+	border-color: #3F2B22;
+	color: #FFFFFF;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+	color: #ffffff;
+	background-color: #3F2B22;
+	border-color: #333;
+}
+
+.panel-default {
+	border-color: #3F2B22;
+}
+
+.panel-default > .panel-heading {
+	background-color: #cdae51;
+	border-color: #3F2B22;
+	color: #fff;
+}
+
+.breadcrumb > li + li:before {
+	content: none;
+}
+
+.nav-pills>li.active>a, 
+.nav-pills>li.active>a:focus, 
+.nav-pills>li.active>a:hover {
+	background-color: #cdae51;
+}
+
+.navbar-inverse .navbar-toggle {	
+	color:  #cdae51;
+	font-weight: bold;
+	border-color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+	background-color: #ddd;
+	border-color: #ddd;	
+	color: #222;
+
+}
+
+.navbar-inverse .navbar-toggle .glyphicon {	
+	padding-right: 0.5em;
+}
+
+.navbar-inverse .navbar-toggle:hover .glyphicon {	
+	color: #222;
+}
+
+.tab-pane {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;	
+	border-bottom: 1px solid #ddd;
+	padding: 0.8em;
+}
+
+.tab-content {
+	margin-bottom: 1.5em;
+}

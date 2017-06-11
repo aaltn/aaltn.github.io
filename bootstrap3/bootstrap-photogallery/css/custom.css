@@ -1,0 +1,98 @@
+/*-----------custom.css---------*/
+
+/* below styles are the default -- take effect at resolutions <768 px */
+.logo {
+	text-align: center;
+}
+.tagline {
+	color: #602F8D;
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 1em;
+}
+
+/* footer styling for all resolutions */
+
+.siteinfo {
+	text-align: center;
+	padding: 3em 0;
+	border-top: 1px solid #ddd;
+}
+.siteinfo a {
+	text-decoration: none;
+	color: #999;
+	font-size: 0.8em;
+}
+.siteinfo a:hover {
+	color: #602F8D;
+	text-decoration: underline;
+}
+
+/* styling thumbnails and modals */
+
+.btn-primary { 
+	background-color: #602F8D; 
+	border-color: #602F8D; 
+}  
+.btn-primary:hover, 
+.btn-primary:focus,  
+.btn-primary:active { 
+	background-color: #53297A; 
+} 
+.modal-body .pull-left { 
+	padding-right: 1em; 
+	padding-bottom: 1em;
+} 
+.modal-body .pull-right { 
+	padding-left: 1em; 
+	padding-bottom: 1em;
+} 
+.modal-footer { 	
+	clear: both; 
+}
+
+/* panel styling for the home page */
+
+.panel-primary .panel-heading {
+	background-color: #602F8D;
+	border-color: #602F8D;
+}
+.panel {
+	border-color: #602F8D;
+}
+
+/* form styles */
+.form-group button {
+	margin-top: 10px;
+}
+form {
+	padding: 0 1em;
+}
+form .col-sm-2,
+form .col-sm-10 {
+	padding: 10px 0;
+	margin: 0;
+}
+
+/* Small devices (tablets, 768px and up) 
+
+Greater than 768 px, push logo left and tagline right. Alter 
+tagline font size, alignment, and padding for larger dimensions.
+
+*/
+@media (min-width: 768px) {  
+	.logo {
+		text-align: left;
+	}
+	.tagline {
+		font-size: 2em;
+		text-align: right;
+		padding-top: 1.6em;
+	}
+	form {
+		width: 550px;
+		margin: 0 auto;		
+	}
+}

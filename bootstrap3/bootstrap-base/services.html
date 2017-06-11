@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>bootstrap-base</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+	<div class="container">
+		<!-- row 1: navigation -->
+		<div class="row">
+			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="glyphicon glyphicon-arrow-down"></span>
+							MENU							
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home</a></li>
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown">About <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="about.html">About</a></li>
+									<li><a href="about.html#winthrop">Dr. Winthrop</a></li>
+									<li><a href="about.html#chase">Dr. Chase</a></li>
+									<li><a href="about.html#sanders">Dr. Sanders</a></li>
+								</ul>                    
+							</li>
+							<li class="active"><a>Services</a></li>
+							<li><a href="photo-contacts.html">Photo Gallery</a></li>
+							<li><a href="photo-contacts.html#contact">Contact</a></li>  
+						</ul>
+					</div> 
+				</div> 
+			</nav>
+		</div>
+
+		<!-- row 2 -->
+
+		<!-- row 2: header -->
+		<header class="row">
+			<div class="col-lg-6 col-sm-5">
+				<a href="index.html"><img class="img-responsive" src="img/logo.png" alt="Wisdom Pets. click for home."></a>
+			</div>
+			<div class="col-lg-6 col-sm-7">
+				<img class="img-responsive hidden-xs"  src="img/animals.jpg" alt="">
+			</div>
+		</header>
+
+		<main>
+			<!-- row 3: article/aside -->
+			<div class="row">			
+
+				<article class="col-lg-offset-1 col-sm-offset-1  col-lg-8 col-sm-7 col-lg-push-3 col-sm-push-4">
+
+					<ol class="breadcrumb">
+						<li><a href="index.html">Home </a><span class="glyphicon glyphicon-chevron-right"></span></li>
+						<li><a href="services.html">Services </a><span class="glyphicon glyphicon-chevron-right"></span></li>
+						<li class="active">Vaccinations</li>
+					</ol>
+
+					<h1>Services</h1>
+					<p><img  class="img-responsive img-thumbnail  pull-right" src="img/cockatiel.jpg" alt="Services">Wisdom Pet Medicine is a state-of-the-art veterinary hospital,   featuring the latest in diagnostic and surgical equipment, and a staff   of seasoned veterinary specialists in the areas of general veterinary   medicine and surgery, oncology, dermatology, orthopedics, radiology,   ultrasound, and much more. We also have a 24-hour emergency clinic in   the event your pet needs urgent medical care after regular business   hours.</p>
+					<p>At Wisdom, we strive to be your pet&rsquo;s medical experts from youth   through the senior years. We build preventative health care plans for   each and every one of our patients, based on breed, age, and sex, so   that your pet receives the most appropriate care at crucial milestones   in his or her life. Our overarching goal is to give your pet the best   shot possible at a long and healthy life, by practicing simple   preventative care. We even provide an online Pet Portal where you can   view all your pet&rsquo;s diagnostic results, treatment plans, vaccination and   diagnostic schedules,  prescriptions, and any other health records.</p>
+					<div class="clearfix visible-xs visible-lg"></div>
+
+					<!--  Togglable tabs -->					
+					<!-- list navigation for tabs -->
+
+					<ul class="nav nav-tabs">
+						<li><a href="#vaccinations" data-toggle="tab"><span class="glyphicon glyphicon-pushpin"></span> Vaccinations</a></li>
+						<li><a href="#checkups" data-toggle="tab"><span class="glyphicon glyphicon-ok"></span> Checkups</a></li>
+						<li><a href="#senior" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span> Senior Pets</a></li>
+						<li><a href="#diet" data-toggle="tab"><span class="glyphicon glyphicon-cutlery"></span> Diet Plans</a></li>
+					</ul>
+
+					<!-- text for each callout -->
+					<!-- Vaccinations -->
+					<div class="tab-content">
+						<div id="vaccinations" class="tab-pane fade active in">
+							<p>Dogs and cats are susceptible to a variety of illnesses that can be completely prevented by following the appropriate vaccination schedule.</p>
+							<p><a href="#" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Read more about vaccines">Read more >></a></p>
+						</div>
+
+						<!-- Checkups -->
+						<div id="checkups" class="tab-pane fade">
+							<p>Regular checkups are a key factor in pet wellness, and can often unearth problems that could lead to health issues down the road.  </p>
+							<p><a href="#" class="btn btn-info">Read more >></a></p>
+						</div>
+
+						<!-- Senior Pets -->
+						<div id="senior" class="tab-pane fade">
+							<p>Senior pets generally require more medical attention than their younger counterparts, just as senior humans do. So when is a pet considered “senior”? </p>
+							<p><a href="#" class="btn btn-info">Read more >></a></p>
+						</div>
+
+						<!-- Diet Plans -->
+						<div id="diet" class="tab-pane fade">
+							<p>Wisdom veterinarians have all had extensive training in pet nutrition and are your best resources when considering changing your pet’s diet. </p>
+							<p><a href="#" class="btn btn-info">Read more >></a></p>
+						</div>
+					</div>
+					<!-- end Togglable tabs -->
+
+					<!-- Accordion -->
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+								<a href="#acc-vaccinations" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><span class="glyphicon glyphicon-pushpin"></span> Vaccinations</a>
+								</h4>
+							</div>
+							<div id="acc-vaccinations" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<p>Dogs and cats are susceptible to a variety of illnesses that can be completely prevented by following the appropriate vaccination schedule.</p>
+									<p><a href="#" class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Read more about vaccines">Read more >></a></p>
+								</div>
+							</div>
+						</div>     
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#acc-checkups" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><span class="glyphicon glyphicon-ok"></span> Checkups</a>
+								</h4>
+							</div>
+							<div id="acc-checkups" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p>Regular checkups are a key factor in pet wellness, and can often unearth problems that could lead to health issues down the road.</p>
+									<p><a href="#" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Read more about checkups">Read more >></a></p>
+								</div>
+							</div>
+						</div>     
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#acc-senior" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"> <span class="glyphicon glyphicon-heart"></span> Senior Pets</a>
+								</h4>
+							</div>
+							<div id="acc-senior" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p>Senior pets generally require more medical attention than their younger counterparts, just as senior humans do. So when is a pet considered “senior”? </p>
+									<p><a href="#" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Read more about senior pets">Read more >></a></p>
+								</div>
+							</div>
+						</div>     
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#acc-diet" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"><span class="glyphicon glyphicon-cutlery"></span> Diet Plans</a>
+								</h4>
+							</div>
+							<div id="acc-diet" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p>Wisdom veterinarians have all had extensive training in pet nutrition and are your best resources when considering changing your pet’s diet.</p>
+									<p><a href="#" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Read more about diet plans">Read more >></a></p>
+								</div>
+							</div>
+						</div>    
+					</div>
+					<!-- end Accordion -->
+
+				</article>			
+
+				<aside class="col-lg-3 col-sm-4 col-lg-pull-9 col-sm-pull-8">
+
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3>Keeping your pet's chompers clean and healthy</h3>
+						</div>
+						<div class="panel-body">
+							<p>You know the importance of brushing your own teeth, but did you know that dogs and cats also need regular attention to their pearly whites? Poor dental hygiene in pets can lead to periodontal disease, a bacterial infection which causes bad breath, drooling, tooth decay, and tooth loss.</p>
+							<p>As always, if you have questions about your pet’s dental or health care, please <a href="#">contact Wisdom Pet Medicine</a> for advice.</p>
+						</div>
+					</div>
+
+					<!-- navigation in the document -->
+					<div class="">
+						<h3>About Our Services</h3>
+						<ul class="nav nav-pills nav-stacked">
+							<li class="active"><a href="#">Vaccinations</a></li>
+							<li><a href="#">Checkups</a></li>
+							<li><a href="#">Senior Pets</a></li>
+							<li><a href="#">Diet Plans</a></li>
+						</ul> 
+					</div>
+				</aside>
+
+			</div><!-- end row 3 -->
+		</main>
+
+		<!-- row 4 -->
+		<footer class="row">	
+			<p><small>This not a real veterinary medicine site, and is not meant to diagnose or offer treatment. Please see your veterinarian for all matters related to your pet's health.</small></p>
+			<p><small>Wisdom Pet Medicine is a training brand owned by <span>Bootstrap3.</span></small></p>
+		</footer>
+	</div> <!-- end container -->
+
+	<!-- javascript -->
+	<script src="js/jquery-latest.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('.nav-tabs a:first').tab('show');
+		});
+		$('a.btn-info').tooltip();
+	</script>
+</body>
+</html>

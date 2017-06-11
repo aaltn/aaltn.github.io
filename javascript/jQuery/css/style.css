@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;    
+    line-height: 1.2em;
+}
+
+body > h1 {
+    margin:0;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-top:25pt;
+    padding-bottom: 15pt;
+        
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: white;
+
+    background-color: #33d;
+    box-shadow: 0px 5px 5px 0px rgba(171,171,171,1);
+}
+
+#content {
+    margin: 10pt;
+}
+
+#example {
+    min-height: 200px;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    
+    font-size:14pt;
+    
+    background-color: #b3c8d0;
+    border: 1px solid gray;    
+}
+
+.box {
+    width: 300px;
+    min-height: 200px;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    
+    font-size:14pt;
+    
+    background-color: #b3c8d0;
+    border: 1px solid gray;
+}
+
+.box p {
+    margin: 0 1pt 0 2pt
+}
+
+.smallbox {
+    width: 200px;
+    min-height: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+
+    font-size:14pt;    
+    
+    background-color: #b3c8d0;
+    border: 1px solid gray;
+}
+
+.inline {
+    display: inline-block;
+}
+
+code {
+    margin: 2pt;
+    padding: 1pt 2pt;   
+    
+    font-family: "source-code-pro", Consolas, monospace;
+    font-size: .9em;
+
+    background-color: #e8e8e8;
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+}
+
+li {
+    line-height: 1.3em;
+}
+
+button {
+    margin: 8px;
+
+    font-size: 14pt;
+}
+    
+#eventDetails {    
+    margin-top: 8pt;
+    padding: 2pt;
+
+    border: 1px solid #aaa;
+}
+
+.lineitem {
+    display: inline-block;
+    width: 120px;    
+}
