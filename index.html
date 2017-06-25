@@ -1,36 +1,371 @@
 <!DOCTYPE html>
-<html  lang="ru">
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">  
-	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio | Alex Altn</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <!-- <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet"> -->
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body class="no-js">	
 
-	<header class="main-header">
-		<div class="wraper">
-			<nav class="main-navigation">
-				<ul class="main-navigation__list">
-					<li class="main-navigation__item main-navigation__item--active"><h1 class="main-header__title">My Portfolio <span class="main-header__tag">&lsaquo;HTML&CSS coder&rsaquo;</span></h1></li>
-					<li class="main-navigation__item"><a href="bshop">Barber-Shop</a></li>
-					<li class="main-navigation__item"><a href="wshop">Nerds</a></li>
-					<li class="main-navigation__item"><a href="sedona">Sedona</a></li>
-					<li class="main-navigation__item"><a href="bshop-adaptive">Barber-Shop adaptive</a></li>
-					<li class="main-navigation__item"><a href="bshop-flex">Barber-Shop flex</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+<body id="page-top">
 
-	<main></main>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Меню <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Алексей Алтынов</a>
+            </div>
 
-	<footer class="main-footer"></footer>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Обо мне</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Навыки</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Портфолио</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-	<script src="js/script.js"></script>  
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Алексей Алтынов</h1>
+                <h2>Личный сайт веб-разработчика</h2>
+                <hr>
+                <p>Данный сайт был сделан в рамках курса по изучению Bootstrap 3.<br>
+				Bootstrap это замечательный CSS&nbsp;framework - позволяющий очень быстро создать современный адаптивный сайт!</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Узнать больше</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">У меня есть то, что вам нужно!</h2>
+                    <hr class="light">
+                    <p class="text-faded">Я начинающий веб-разработчик из Мариуполя. Мне 37 лет. Я интересуюсь разработкой современных сайтов и приложений. Мне нравиться делать интересные и сложные проекты.</p>
+                    <p class="text-faded">На данный момент я лучше всего разбираюсь во Frontend разработке, но я также знаком с Backend-ом и могу решать не сложные задачи связанные с ним. Но давайте по порядку.</p>
+                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Подробнее о навыках</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Мои навыки</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-html5 text-primary sr-icons"></i>
+                        <h3>Frontend</h3>
+                        <p class="text-muted"><i>HTML5/CSS3</i> - высокий уровень знания</p>
+                        <p class="text-muted"><i>JS</i> - базовые знания (опыт работы с jQwery)</p>
+                        <p class="text-muted">Адаптивная, семантическая, валидная (W3C), кроссбраузерная верстка</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>Backend</h3>
+                        <p class="text-muted"><i>PHP 5.0</i> - базовые знания</p>
+                        <p class="text-muted"><i>MS SQL/MySQL</i> - опыт работы с базами данных</p>
+                        <p class="text-muted"><i>NodeJS</i> - использование для автоматизации рабочего процесса</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Workflow</h3>
+                        <p class="text-muted"><i>Git</i> - опыт работы</p>
+                        <p class="text-muted"><i>Gulp/Less</i> - навыки использования</p>
+                        <p class="text-muted"><i>Bootstrap 3</i> - примеры работ в портфолио</p>
+                        <p class="text-muted"><i>Photoshop</i> - нарезка макетов, создание и экспорт растровой и векторной графики</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Сделано с любовью</h3>
+                        <p class="text-muted">Вы получите свой веб сайт сделанный с любовью!</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter"><!--div class="row no-gutter popup-gallery"-->
+                <div class="col-lg-4 col-sm-6">
+                    <article class="portfolio-box">
+                        <img class="img-responsive" src="img/portfolio/thumbnails/html-essential-s.jpg" alt="Html-essential preview">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <span class="">HTML basic</span>
+                                </div>
+                                <div class="project-name">
+                                    HTML Essential Training<!-- Имя проекта 1 -->
+                                </div>
+                                <div class="project-description">
+                                    <p class="">Сайт создан в процессе изучения курса <a class="fa" href="https://www.lynda.com/Web-Development-tutorials/HTML-Essential-Training/170427-2.html"  target="_blank">HTML Essential Training</a> от&nbsp;Lynda.com</p>
+                                    <p class=""><i>Технологии:</i> html, css, javascript.</p>
+                                    <a href="html-basic/site" class="fa fa-link" target="_blank">Link to website</a>
+                                    <br>
+                                    <a href="https://github.com/aaltn/HTML-basic" class="fa fa-link" target="_blank">Link to github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <article class="portfolio-box">
+                        <img class="img-responsive" src="img/portfolio/thumbnails/bootstrap3-basic-s.jpg" alt="Barbershop preview">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <span class="">Bootstrap 3</span>
+                                </div>
+                                <div class="project-name">
+                                    Bootstrap 3 basic<!-- Имя проекта 2 -->
+                                </div>
+                                <div class="project-description">
+                                    <p class="">Сайт создан в процессе изучения курса <a class="fa" href="https://www.lynda.com/Bootstrap-tutorials/Welcome/161086/181292-4.html" target="_blank">Bootstrap 3 basic</a> от&nbsp;Lynda.com</p>
+                                    <p class=""><i>Технологии:</i> Bootstrap 3, html, css, javascript.</p>
+                                    <a href="bootstrap3/bootstrap-base" class="fa fa-link" target="_blank">Link to website</a>
+                                    <br>
+                                    <a href="https://github.com/aaltn/bootstrap3/tree/master/bootstrap-base" class="fa fa-link" target="_blank">Link to github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <article class="portfolio-box">
+                        <img class="img-responsive" src="img/portfolio/thumbnails/bootstrap3-essential-s.jpg" alt="Bootstrap3-essential preview">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <span class="">Bootstrap 3</span>
+                                </div>
+                                <div class="project-name">
+                                    Bootstrap 3 essential<!-- Имя проекта 3 -->
+                                </div>
+                                <div class="project-description">
+                                    <p class="">Сайт создан в процессе изучения курса <a class="fa" href="https://www.lynda.com/Bootstrap-tutorials/Welcome/161098/176508-4.html" target="_blank">Bootstrap 3 essential Training</a> от&nbsp;Lynda.com</p>
+                                    <p class=""><i>Технологии:</i> Bootstrap 3, html, css, javascript.</p>
+                                    <a href="bootstrap3/bootstrap-photogallery" class="fa fa-link" target="_blank">Link to website</a>
+                                    <br>
+                                    <a href="https://github.com/aaltn/bootstrap3/tree/master/bootstrap-photogallery" class="fa fa-link" target="_blank">Link to github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <article class="portfolio-box">
+                        <img class="img-responsive" src="img/portfolio/thumbnails/barbershop1-s.jpg" alt="Barbershop preview">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <span class="">HTML Academy - Basic</span>
+                                </div>
+                                <div class="project-name">
+                                    Barbershop<!-- Имя проекта 4 -->
+                                </div>
+                                <div class="project-description">
+                                    <p class="">Вёрстка учебного макета Barbershop Borodinski при прохождении базового курса HTML Academy.</p>
+                                    <p class=""><i>Технологии:</i> html, css, javascript <br><i>Подход:</i> Progressive Enhancement.</p>
+                                    <a href="bshop" class="fa fa-link" target="_blank">Link to website</a>
+                                    <br>
+                                    <a href="https://github.com/aaltn/Barber-Shop" class="fa fa-link" target="_blank">Link to github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <article class="portfolio-box">
+                        <img class="img-responsive" src="img/portfolio/thumbnails/nerds-s.jpg" alt="NЁRDS preview">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <span class="">HTML Academy - Basic</span>
+                                </div>
+                                <div class="project-name">
+                                    NЁRDS<!-- Имя проекта 5 -->
+                                </div>
+                                <div class="project-description">
+                                    <p class="">Вёрстка личного макета Nerds - базовый курс HTML Academy. Это прототип сайта веб-студии.</p>
+                                    <p class=""><i>Технологии:</i> html, css, javascript <br><i>Подход:</i> Progressive Enhancement.</p>
+                                    <a href="wshop" class="fa fa-link" target="_blank">Link to website</a>
+                                    <br>
+                                    <a href="https://github.com/aaltn/web-shop" class="fa fa-link" target="_blank">Link to github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <article class="portfolio-box">
+                        <img class="img-responsive" src="img/portfolio/thumbnails/sedona-s.jpg" alt="Sedona preview">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <span class="">HTML Academy - Basic</span>
+                                </div>
+                                <div class="project-name">
+                                    Sedona<!-- Имя проекта 6 -->
+                                </div>
+                                <div class="project-description">
+                                    <p class="">Вёрстка личного макета Sedona - базовый курс HTML Academy. Это прототип сайта туристического города.</p>
+                                    <p class=""><i>Технологии:</i> html, css, javascript, SVG <br><i>Подход:</i> Progressive Enhancement, резиновая вёрстка.</p>
+                                    <a href="sedona" class="fa fa-link" target="_blank">Link to website</a>
+                                    <br>
+                                    <a href="https://github.com/aaltn/-edona" class="fa fa-link" target="_blank">Link to github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <article class="portfolio-box">
+                        <img class="img-responsive" src="img/portfolio/thumbnails/barbershop2-s.jpg" alt="Barbershop preview">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <span class="">HTML Academy - Advanced</span>
+                                </div>
+                                <div class="project-name">
+                                    Barbershop<!-- Имя проекта 7 -->
+                                </div>
+                                <div class="project-description">
+                                    <p class="">Продвинутый курс HTML Academy.</p>
+                                    <p class=""><i>Технологии, подходы:</i> Mobile-first, LESS, Responsive, flex, BEM notation.</p>
+                                    <a href="bshop-adaptive" class="fa fa-link" target="_blank">adaptive</a> <a href="https://aaltn.github.io/bshop-flex" class="fa fa-link" target="_blank">flex+fluid</a>
+                                    <br>
+                                    <a href="https://github.com/aaltn/shop-adaptiv" class="fa fa-link" target="_blank">to github</a> <a href="https://github.com/aaltn/shop-adaptiv/tree/flex" class="fa fa-link" target="_blank">to github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <article class="portfolio-box">
+                        <img class="img-responsive" src="img/portfolio/thumbnails/pink-s.jpg" alt="Barbershop preview">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    <span class="">HTML Academy - Advanced</span>
+                                </div>
+                                <div class="project-name">
+                                    Pink<!-- Имя проекта 8 -->
+                                </div>
+                                <div class="project-description">
+                                    <p class="">Вёрстка личного макета Pink - продвинутый курс HTML Academy.</p>
+                                    <p class=""><i>Технологии, подходы:</i> Mobile-first, LESS, Responsive, flex, BEM notation.</p>
+                                    <a class="fa fa-link" target="_blank">in developing</a>
+                                    <br>
+                                    <a class="fa fa-link" target="_blank">in developing</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            <!-- end gallery-->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <!-- Let's Get In Touch! -->
+                    <h2 class="section-heading">Будем оставаться на связи!</h2>
+                    <hr class="primary">
+                    <!-- Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible! -->
+                    <p>Вы готовы начать свой следующий проект со мной? Замечательно! Позвоните мне или отправьте электронное письмо, и я свяжусь с Вами как можно скорее!
+                    </p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <a href="tel:+380964124914"><p>096-412-49-14</p></a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:alex.altn@gmail.com">alex.altn@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <!-- <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script> -->
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
 
 </body>
+
 </html>
