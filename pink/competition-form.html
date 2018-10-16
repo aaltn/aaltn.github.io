@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Конкурс от приложения «Пинк»</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="logo"   href="index.html">
+          <img class="logo__image" src="img/logo-pink-blue-mobile.svg" alt="логотип сайта Пинк" width="76" height="26">
+          <!-- img/logo-pink-white-mobile.svg -->
+          <!-- img/logo-pink-white-tablet.svg -->
+          <!-- img/logo-pink-white-desktop.svg -->
+        </a>
+        <button class="main-nav__toggler" type="button">
+          <span class="visually-hidden">Открыть\закрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photos.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a>Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://aaltn.github.io">AAltn coder</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__page-title">Конкурс на самое безбашенное путешествие с «Пинк»</h1>
+    </header>
+    <!-- ----------------------------- -->
+    <main class="page-main">
+      <section class="competition-form">
+        <h2 class="visually-hidden">Форма для участия в конкурсе от «Пинк»</h2>
+        <p class="page-main__lead">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="visually-hidden">Пожалуйста, заполните форму ниже:</span></p>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Персональные данные:</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="user-surname">Фамилия:</label>
+                <input class="form__input-text" id="user-surname" type="text" placeholder="Укажите фамилию *">
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="user-name">Имя:</label>
+                <input class="form__input-text" id="user-name" type="text" placeholder="Введите ваше имя *">
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="user-patronymic">Отчество:</label>
+                <input class="form__input-text" id="user-patronymic" type="text" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--gray">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-checkbox" id="selfy-with-shark-id" type="checkbox" name="selfy-with-shark" checked>
+                <label class="form__label" for="selfy-with-shark-id">Сделал селфи с акулой</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="burny-on-beach-id" type="checkbox" name="burny-on-beach" checked>
+                <label class="form__label" for="burny-on-beach-id">Обгорел на пляже</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="saw-chack-norris-id" type="checkbox" name="saw-chack-norris">
+                <label class="form__label" for="saw-chack-norris-id">Видел Чака Норриса</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="bought-souvenirs-id" type="checkbox" name="bought-souvenirs">
+                <label class="form__label" for="bought-souvenirs-id">Накупил сувениров</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="hold-tower-id" type="checkbox" name="hold-tower" checked>
+                <label class="form__label" for="hold-tower-id">Удержал башню</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-checkbox" id="crashed-hotel-id" type="checkbox" name="crashed-hotel">
+                <label class="form__label" for="crashed-hotel-id">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Контактная информация</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="user-tel">Номер телефона</label>
+                <input class="form__input-text  form__input-text--phone" id="user-tel" type="number" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="user-email">Адрес почты</label>
+                <input class="form__input-text  form__input-text--email" id="user-email" type="email" placeholder="Введите почту *">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--gray">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input-radio" name="used-app" value="iOS" id="pink-ios-app" type="radio" checked>
+                <label class="form__label" for="pink-ios-app">Pink для iOS</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-radio" name="used-app" value="Android" id="pink-android-app" type="radio">
+                <label class="form__label" for="pink-android-app">Pink на Android</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input-radio" name="used-app" value="WindowsPhone" id="pink-windows-app" type="radio">
+                <label class="form__label" for="pink-windows-app">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Опишите свои эмоции</legend>
+            <textarea class="form__input-text form__input-text--margin-lr" name="users-emotion" id="users-emotion-id" cols="21" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
+          <input type="submit" class="form__submit-button button" value="ОТПРАВИТЬ ФОРМУ">
+        </form>
+        <p class="form__note"><span class="form__note form__note--red">*</span> — обязательные поля</p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="logo">
+        <img class="logo__image  logo__image--footer" src="img/logo-pink-blue-mobile.svg" alt="логотип сайта Пинк" width="76" height="26">
+        <!-- img/logo-pink-white-mobile.svg -->
+        <!-- img/logo-pink-white-tablet.svg -->
+        <!-- img/logo-pink-white-desktop.svg -->
+      </a>
+      <div class="page-footer__social  social">
+        <b class="visually-hidden">Ссылки на социальные сети:</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link  social__link--twitter"  href="https://twitter.com">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--facebook"  href="https://facebook.com">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--youtube"  href="https://youtube.com">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Свёрстанно</b>
+        <a class="copyright__link  button" href="https://aaltn.github.io">coder AAltn</a>
+      </div>
+    </footer>
+
+  </body>
+</html>

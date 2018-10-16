@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Фотографии пользователей «Пинк»</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="logo"   href="index.html">
+          <img class="logo__image" src="img/logo-pink-blue-mobile.svg" alt="логотип сайта Пинк" width="76" height="26">
+          <!-- img/logo-pink-white-mobile.svg -->
+          <!-- img/logo-pink-white-tablet.svg -->
+          <!-- img/logo-pink-white-desktop.svg -->
+        </a>
+        <button class="main-nav__toggler" type="button">
+          <span class="visually-hidden">Открыть\закрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a>Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="competition-form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://aaltn.github.io">AAltn coder</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__page-title">Фотографии пользователей</h1>
+    </header>
+    <!-- ----------------------------- -->
+    <main class="page-main">
+      <section class="gallery-posts">
+        <h2 class="visually-hidden">Недавние посты</h2>
+        <p class="page-main__lead">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <article class="post  post--best">
+          <h3 class="post__title">Панорама дня</h3>
+          <a href="#" class="post__image">
+            <img src="img/panorama-mobile@1x.jpg" alt="Панорама моста" class="post__img" width="320" height="137">
+          </a>
+          <div class="post__author">
+            <span class="post__author-name">Анна</span>
+            <time class="post__datetime" datetime="2018-10-10 20:00">
+               <!-- .post__datetime-calc = curent.date - .post__datetime.datetime -->
+              (<span class="post__datetime-calc">5 минут</span> назад)
+            </time>
+          </div>
+          <div class="post__text">
+            <p>Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          </div>
+          <div class="post__actions">
+            <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
+            <a class="post__stats" href="#">Hравится: <span class="post__stats-count">215</span></a>
+          </div>
+        </article>
+        <!-- --------------------------------- -->
+        <div class="posts-list">
+          <article class="post  post--card">
+            <h3 class="post__title  visually-hidden">Пост от .datetime</h3>
+            <a href="#" class="post__image">
+              <img src="img/photo-car-mobile@1x.jpg" alt="Фото автомобиля" class="post__img" width="280" height="180">
+            </a>
+            <div class="post__author">
+              <span class="post__author-name">Левон</span>
+              <time class="post__datetime" datetime="2018-10-10 15:00">
+                (<span class="post__datetime-calc">5 часов</span> назад)
+                <!-- .post__datetime-calc = curent.date - .post__datetime.datetime -->
+              </time>
+            </div>
+            <div class="post__text">
+              <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            </div>
+            <div class="post__actions">
+              <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
+              <a class="post__stats" href="#">Hравится: <span class="post__stats-count">356</span></a>
+            </div>
+          </article>
+          <article class="post  post--card">
+            <h3 class="post__title  visually-hidden">Пост от .datetime</h3>
+            <a href="#" class="post__image">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото баробанов" class="post__img" width="280" height="180">
+            </a>
+            <div class="post__author">
+              <span class="post__author-name">Антон</span>
+              <time class="post__datetime" datetime="2018-10-09 15:00">
+                (<span class="post__datetime-calc">12 часов</span> назад)
+                <!-- .post__datetime-calc = curent.date - .post__datetime.datetime -->
+              </time>
+            </div>
+            <div class="post__text">
+              <p>Соседи будут рады!</p>
+            </div>
+            <div class="post__actions">
+              <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
+              <a class="post__stats" href="#">Hравится: <span class="post__stats-count">356</span></a>
+            </div>
+          </article>
+          <article class="post  post--card">
+            <h3 class="post__title  visually-hidden">Пост от .datetime</h3>
+            <a href="#" class="post__image">
+              <img src="img/photo-window-mobile@1x.jpg" alt="Фото потолка вестебюля" class="post__img" width="280" height="180">
+            </a>
+            <div class="post__author">
+              <span class="post__author-name">Борис</span>
+              <time class="post__datetime" datetime="2018-10-09 19:00">
+                (<span class="post__datetime-calc">20 часов</span> назад)
+                <!-- .post__datetime-calc = curent.date - .post__datetime.datetime -->
+              </time>
+            </div>
+            <div class="post__text">
+              <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </div>
+            <div class="post__actions">
+              <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
+              <a class="post__stats" href="#">Hравится: <span class="post__stats-count">356</span></a>
+            </div>
+          </article>
+          <article class="post  post--card">
+            <h3 class="post__title  visually-hidden">Пост от .datetime</h3>
+            <a href="#" class="post__image">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="Кубанская ярмарка" class="post__img" width="280" height="180">
+            </a>
+            <div class="post__author">
+              <span class="post__author-name">Сергей</span>
+              <time class="post__datetime" datetime="2018-10-09 15:00">
+                (<span class="post__datetime-calc">25 часов</span> назад)
+                <!-- .post__datetime-calc = curent.date - .post__datetime.datetime -->
+              </time>
+            </div>
+            <div class="post__text">
+              <p>Самая кубанская в мире!</p>
+            </div>
+            <div class="post__actions">
+              <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
+              <a class="post__stats" href="#">Hравится: <span class="post__stats-count">356</span></a>
+            </div>
+          </article>
+          <article class="post  post--card">
+            <h3 class="post__title  visually-hidden">Пост от .datetime</h3>
+            <a href="#" class="post__image">
+              <img src="img/photo-pov-mobile@1x.jpg" alt="Фото в горах" class="post__img" width="280" height="180">
+            </a>
+            <div class="post__author">
+              <span class="post__author-name">Максим</span>
+              <time class="post__datetime" datetime="2018-10-08 11:00">
+                (<span class="post__datetime-calc">40 часов</span> назад)
+                <!-- .post__datetime-calc = curent.date - .post__datetime.datetime -->
+              </time>
+            </div>
+            <div class="post__text">
+              <p>Где снег-то?</p>
+            </div>
+            <div class="post__actions">
+              <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
+              <a class="post__stats" href="#">Hравится: <span class="post__stats-count">356</span></a>
+            </div>
+          </article>
+          <article class="post  post--card">
+            <h3 class="post__title  visually-hidden">Пост от .datetime</h3>
+            <a href="#" class="post__image">
+              <img src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета" class="post__img" width="280" height="180">
+            </a>
+            <div class="post__author">
+              <span class="post__author-name">Надежда</span>
+              <time class="post__datetime" datetime="2018-10-08 07:00">
+                (<span class="post__datetime-calc">45 часов</span> назад)
+                <!-- .post__datetime-calc = curent.date - .post__datetime.datetime -->
+              </time>
+            </div>
+            <div class="post__text">
+              <p>Всем GM и взаимные лайки!</p>
+            </div>
+            <div class="post__actions">
+              <button class="post__like-btn  like-btn" type="button" title="Мне нравится">Мне нравится</button>
+              <a class="post__stats" href="#">Hравится: <span class="post__stats-count">356</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="filters">
+        <h3 class="visually-hidden">Запостить фоточку:</h3>
+        <p class="page-main__lead">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="filters__feature">
+          <img class="filters__image-preview" src="img/photo-road-desktop@1x.jpg" width="280" height="374" alt="Снежная дорога">
+          <p class="filters__toggler  slider__toggler">
+            <button class="slider__button"  type="button" id="button-cut">Обрезка</button>
+            <button class="slider__button  slider__button--active"  type="button" id="button-fill">Заливка</button>
+            <button class="slider__button"  type="button" id="button-contrast">Контрастность</button>
+          </p>
+          <form class="filters-form  slider" action="https://echo.htmlacademy.ru" method="get">
+            <ul class="filters-form__list  slider__list">
+              <li class="filters-form__item  filters-form__item--cut  slider__item">
+                <label class="filters-form__label" for="range-cut">Обрезка</label>
+                <input class="filters-form__input" type="range" name="range-cut" min="0" max="100" id="range-cut">
+              </li>
+              <li class="filters-form__item  filters-form__item--cut  slider__item">
+                <label class="filters-form__label" for="range-contrast">Контрастность</label>
+                <input class="filters-form__input" type="range" name="range-fill" id="range-fill">
+              </li>
+              <li class="filters-form__item  filters-form__item--cut  slider__item">
+                <label class="filters-form__label" for="range-contrast">Контрастность</label>
+                <input class="filters-form__input" type="range" name="range-contrast" id="range-contrast">
+              </li>
+            </ul>
+            <button class="filters-form__button  button" type="submit">Запостить</button>
+            <button class="filters-form__button  button" type="reset">Отмена</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="logo">
+        <img class="logo__image  logo__image--footer" src="img/logo-pink-blue-mobile.svg" alt="логотип сайта Пинк" width="76" height="26">
+        <!-- img/logo-pink-white-mobile.svg -->
+        <!-- img/logo-pink-white-tablet.svg -->
+        <!-- img/logo-pink-white-desktop.svg -->
+      </a>
+      <div class="page-footer__social  social">
+        <b class="visually-hidden">Ссылки на социальные сети:</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link  social__link--twitter"  href="https://twitter.com">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--facebook"  href="https://facebook.com">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--youtube"  href="https://youtube.com">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Свёрстанно</b>
+        <a class="copyright__link  button" href="https://aaltn.github.io">coder AAltn</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
