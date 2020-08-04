@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный проект "Device"</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+  <header class="main-header  container">
+    <nav class="navigation">
+      <a class="logo" href="index.html">
+        <!-- на других страницах будет ссылкой на главную -->
+        <img src="img/header_logo.png" width="164" height="36" alt="Логотип магазина «DEVICE»">
+      </a>
+
+      <div class="navigation-wrapper">
+        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+          <p>
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input  class="search-input" id="search-input" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="button  button--search" type="submit">Найти</button>
+          </p>
+        </form>
+
+        <ul class="navigation-user">
+          <li class="inactive"><a class="login-link" href="#">Войти</a></li>
+          <li><a class="login-user" href="#">Валентин Петухов</a></li>
+          <li class="active"><a class="logout-link  " href="#">Выйти</a></li>
+          <li><a class="navigation-user__compare" href="compare.html">Сравнить</a></li>
+          <li><a class="navigation-user__cart" href="cart.html">Корзина</a></li>
+        </ul>
+      </div>
+
+      <ul class="navigation-site">
+        <li class="dropdown  active">
+          <a  class="dropdown-link"  href="catalog.html">Каталог товаров</a>
+          <ul class="navigation-catalog">
+            <ul class="photo-video-catalog">
+              <li><a href="catalog.html?sort=virtual+reality">Виртуальная реальность</a></li>
+              <li><a href="catalog.html?sort=monopods">Моноподы для селфи</a></li>
+              <li><a href="catalog.html?sort=action+cameras">Экшн-камеры</a></li>
+            </ul>
+            <ul class="wearable-gadgets-catalog">
+              <li><a href="catalog.html?sort=fitness+bracelets">Фитнес-браслеты</a></li>
+              <li><a href="catalog.html?sort=smart+watch">Умные часы</a></li>
+            </ul>
+            <ul class="quadrocopters-catalog">
+              <li><a href="catalog.html?sort=quadcopters">Квадракоптеры</a></li>
+            </ul>
+          </ul>
+        </li>
+        <li><a href="index.html#delivery">Доставка</a></li> <!-- href="index.html#delivery" -->
+        <li><a href="index.html#warranty">Гарантия</a></li> <!-- href="index.html#warranty" -->
+        <li><a href="index.html#contacts">Контакты</a></li> <!-- href="index.html#contacts" -->
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="visually-hidden">Поробно о товаре: </h1>
+    <div class="catalog__item">
+      <h2 class="visually-hidden">Квадрокоптеры</h2>
+      <a class="button-image-zoom" href="#zoom">
+        <p class="catalog__item-image">
+          <img src="img/slider-3.png"  width="526" height="334" alt="Монопод Стиллера">
+        </p>
+      </a>
+      <h3>
+        <span class="catalog__category">Квадрокоптеры: </span>
+        <br>
+        <span class="catalog__item-title">Порхает как бабочка, жалит как пчела!</span>
+      </h3>
+      <p class="catalog__item-price">
+        <b>14 900 руб.</b>
+      </p>
+      <div class="catalog__description">
+        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        <table>
+          <tr>
+            <td>800 м.</td>
+            <td>50 м.</td>
+          </tr>
+          <tr>
+            <th>Дальность полёта</th>
+            <th>Радиус поражения</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+
+    <div class="container">
+      <section class="footer-user">
+        <h2 class="visually-hidden">Для пользователя</h2>
+        <a class="logo  logo--footer">
+          <!-- на других страницах будет ссылкой на главную -->
+          <img src="img/footer_logo.png"  width="163" height="36" alt="Логотип магазина «DEVICE»">
+        </a>
+        <ul class="navigation-user  navigation-user--footer">
+          <li class="inactive"><a class="login-link" href="#">Войти</a></li>
+          <li><a class="login-user" href="#">Валентин Петухов</a></li>
+          <li class="active"><a class="logout-link  " href="#">Выйти</a></li>
+          <li><a class="navigation-user__compare" href="compare.html">Сравнить</a></li>
+          <li><a class="navigation-user__cart" href="cart.html">Корзина</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-condition">
+        <h2 class="visually-hidden">Услоивия покупки</h2>
+        <p>г. Москва, ул. Строителей, 15</p>
+        <ul class="navigation-site  navigation-site--footer">
+          <li><a href="index.html#delivery">Доставка</a></li> <!-- href="index.html#delivery" -->
+          <li><a href="index.html#warranty">Гарантия</a></li> <!-- href="index.html#warranty" -->
+          <li><a href="index.html#contacts">Контакты</a></li> <!-- href="index.html#contacts" -->
+        </ul>
+        <p class="contacts-tel">
+          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </p>
+      </section>
+
+      <section class="footer-social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="social-links">
+          <li class="social-button  social-button--fb"><a href="fb.com">Мы в фйесбуке</a></li>
+          <li class="social-button  social-button--istagram"><a href="istagram.com">Мы в инстаграмме</a></li>
+          <li class="social-button  social-button--twitter"><a href="twitter.com">Мы в твиттере</a></li>
+        </ul>
+        <p class="copyright">
+          <a href="https://aaltn.github.io/">aaltn.github.io</a>
+        </p>
+      </section>
+    </div>
+
+  </footer>
+
+  <div class="modal-overlay"></div>
+
+  <section class="modal  modal-login">
+    <h2>Личный кабинет</h2>
+    <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="modal-input" id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="modal-input" id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-help">
+          <label class="login-checkbox">
+              <input type="checkbox" name="remember" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+      </p>
+      <button class="button  accent-link" type="submit">Войти</button>
+    </form>
+    <button class="button  button--modal-close" type="button" tabindex="0">Закрыть</button>
+  </section>
+
+  <section id="zoom"  class="modal  modal-image-zoom">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <img src="img/slider-3.png"  width="1052" height="668" alt="Монопод Стиллера">
+    <button class="button  button--modal-close" type="button">Закрыть</button>
+  </section>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
